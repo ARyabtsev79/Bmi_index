@@ -1,7 +1,8 @@
 public class BmiService {
 
-    public int calculate(int height, int weight) {
-        int bodymassindex = weight * 100 / (height * height);
-        return bodymassindex;
+    public int calculate(double height, double weight) {
+        double bodymassindex;
+        bodymassindex = weight / (height * height);
+        return (int) bodymassindex;
     }
 }
